@@ -1,3 +1,3 @@
 # Restaurant Page
 
-A restaurant page created with webpack and npm
+A restaurant page created with modules, webpack and npm.
