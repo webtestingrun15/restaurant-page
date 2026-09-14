@@ -1,5 +1,5 @@
 // src/index.js
-import { aboutLoad, clearPage, contactLoad, menuLoad, pageLoad } from "./page-load";
+import { aboutLoad, clearPage, contactLoad, menuLoad, pageLoad } from "./page-load.js";
 import "./styles.css";
 
 const homeButton = document.querySelector("#home");
