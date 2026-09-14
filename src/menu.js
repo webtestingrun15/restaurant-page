@@ -2,10 +2,14 @@ export { menuDiv };
 
 const menuDiv =
   `<div class="menu">
-            <h1>Menu</h1>
-            <p>Planted Fuel for your belly.</p>
-            <h2>Salads</h2>
-            <p class="intro">Raw and freshly picked veggies</p>
+            <div class="intro">
+                <h1>Menu</h1>
+                <p>Planted Fuel for your belly.</p>
+            </div>
+            <div class="top-menu">
+                <h2>Salads</h2>
+                <p class="intro">Raw and freshly picked veggies</p>
+            </div>
             <div class="sub-menu">
                 <div class="menu-item">
                     <h3>Vegan Caesar</h3>
@@ -18,9 +22,10 @@ const menuDiv =
                     <p class="description">Salad with lettuce, kale, mango and Avocado</p>
                 </div>
             </div>
-            <h2>Proteins</h2>
-            <p class="intro">Meals served with high-protein items.</p>
-            <h2>Soups</h2>
+            <div class="top-menu">
+                 <h2>Bowls</h2>
+                <p class="intro">Meals served with high-protein items.</p>
+            </div>
             <div class="sub-menu">
                 <div class="menu-item">
                     <h3>Vegan Bowls</h3>
@@ -38,7 +43,10 @@ const menuDiv =
                     <div class="description">Meal of the day picked by our chef.</div>
                 </div>
             </div>
-            <p class="intro">A bowl of hot soup</p>
+            <div class="top-menu">
+                <h2>Soups</h2>
+                <p class="intro">A bowl of hot soup</p>
+            </div>
             <div class="sub-menu">
                 <div class="menu-item">
                     <h3>Soup of Day</h3>
@@ -56,8 +64,10 @@ const menuDiv =
                     <p class="description">A eatery favorite. Soup served with mushrooms.</p>
                 </div>
             </div>
-            <h2>Drinks</h2>
-            <p class="intro">Freshly squeezed drinks</p>
+            <div class="top-menu">
+                <h2>Drinks</h2>
+                <p class="intro">Freshly squeezed drinks</p>
+            </div>
             <div class="sub-menu">
                 <div class="menu-item">
                     <h3>Pineapple Snapper</h3>

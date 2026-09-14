@@ -1,7 +1,8 @@
-import { aboutDiv, contactDiv } from "./contact.js";
+import { aboutDiv } from "./about.js";
+import { contactDiv } from "./contact.js";
 import { menuDiv } from "./menu.js";
 import veggiesImg from "/img/chopping-veggies.jpg";
-export { clearPage, contactLoad, menuLoad, pageLoad };
+export { aboutLoad, clearPage, contactLoad, menuLoad, pageLoad };
 
 const contentDiv = document.querySelector(`#content`);
 
@@ -13,8 +14,12 @@ const menuLoad = ()=> {
     contentDiv.innerHTML = menuDiv;
 }
 
+const aboutLoad = () => {
+    contentDiv.innerHTML = aboutDiv;
+}
+
 const contactLoad = () => {
-    contentDiv.innerHTML = contactDiv + aboutDiv;
+    contentDiv.innerHTML = contactDiv;
 }
 
 const clearPage = () => {

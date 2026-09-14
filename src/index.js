@@ -1,7 +1,6 @@
 // src/index.js
-import { clearPage, contactLoad, menuLoad, pageLoad } from "./page-load";
+import { aboutLoad, clearPage, contactLoad, menuLoad, pageLoad } from "./page-load";
 import "./styles.css";
-// import { aboutDiv, contactDiv, heroDiv, menuDiv } from "./index.js";
 
 const homeButton = document.querySelector("#home");
 homeButton.addEventListener('click', function() {
@@ -17,6 +16,12 @@ menuButton.addEventListener('click', function () {
 
 const aboutButton = document.querySelector("#about");
 aboutButton.addEventListener('click', function () {
+  clearPage();
+  aboutLoad();
+});
+
+const contactButton = document.querySelector("#contact");
+contactButton.addEventListener('click', function () {
   clearPage();
   contactLoad();
 });

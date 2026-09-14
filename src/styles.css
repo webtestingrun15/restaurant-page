@@ -1,3 +1,120 @@
+:root {
+    --olive-leaf: #606c38ff;
+    --black-forest: #283618ff;
+    --cornsilk: #fefae0ff;
+    --sunlit-clay: #dda15eff;
+    --copperwood: #bc6c25ff;
+}
+
+/* Resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*:not(dialog) {
+    margin: 0;
+    padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* remove default focus from Chrome Browsers */
+input:focus {
+    outline: none;
+}
+
 body {
-    background-color: aqua;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    padding: 1rem;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+    font-weight: normal;
+    background-color: var(--cornsilk);
+    color: var(--black-forest);
+}
+
+/* header */
+header > nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+/* navigation */
+button {
+    padding: 5px;
+    background-color: var(--copperwood);
+    color: var(--cornsilk);
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+
+/* hero */
+.hero > * {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+img {
+    margin: 0 auto;
+}
+
+/* menu */
+.menu > .intro {
+    text-align: center;
+}
+
+.menu > * {
+    margin-bottom: 10px;
+}
+
+.sub-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.top-menu {
+    border-top: 1px dashed var(--sunlit-clay);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.description {
+    font-style: italic;
+}
+
+/* about */
+.about > *,
+.contact > * {
+    margin-bottom: 10px;
+    text-align: center;
 }
