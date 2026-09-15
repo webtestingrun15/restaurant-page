@@ -1,10 +1,8 @@
 // webpack.config.js
-// file just for example can delete
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import path from "node:path";
 
 export default {
-  mode: "development",
   entry: "./src/index.js",
   output: {
     filename: "main.js",
